@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:/Users/cqlray/.m2' 
+            args '-v Users/cqlray/.m2:/root/.m2' 
         }
     }
     stages {
